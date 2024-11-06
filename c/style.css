@@ -42,8 +42,8 @@ body {
 /* Styles the top1 class */
 .top1 {
   grid-area: top;
-  background-color: #f1f1f1;
-  padding: 300px;
+  background-color: #d9f1c0;
+  padding: 30px;
   text-align: center;
   font-size: 35px;
 }
