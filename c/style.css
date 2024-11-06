@@ -1,0 +1,288 @@
+
+
+h1 {
+    font-size:3rem;
+    font-family: 'Poppins'
+}
+h2 {
+    font-size:2rem;
+    font-family: 'Poppins';
+}
+
+h3 {
+    font-size:5rem;
+    font-family: 'Poppins';
+}
+
+h4 {
+  font-size: 500px;
+  font-family: 'Poppins';
+  line-height: 2rem;
+}
+
+p {
+    font-size:1rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+/* this makes sure the page does not have a border */
+body {
+  margin: 0;
+}
+
+/* Styles the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Styles the top1 class */
+.top1 {
+  grid-area: top;
+  background-color: #f1f1f1;
+  padding: 300px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Style which has background color red and padding 200px */
+.top2 {
+  grid-area: top;
+  background-color: #ff0303;
+  padding: 200px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Styles the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins'
+}
+
+/* Changes color of topnav links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Styles the topnav header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* the styling below targets the "intro" div where you introduce the typeface*/
+.intro {
+  display: grid;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+} 
+
+/* BEGIN SCROLLING TEXT ANIMATION */
+/* the styling below applies to the scrolling text animation or the "bar" div */
+   .bar {
+    position: auto;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    background-color: #000;
+    font-family: 'Poppins';
+    color: white;
+  }
+
+  .bar_content {
+    display: block; /* Important to give the content a width */
+    width: 100%;
+    transform: translateX(100%); /* Animation start out of the screen */
+
+    /* Adds the scroll animation styling */
+    animation: move 30s linear infinite /* infinite make reapeat the animation indefinitely */;
+  }
+
+  /* Puts the animation into effect*/
+  @keyframes move {
+    to { transform: translateX(-100%); }
+  }
+/* END SCROLLING TEXT ANIMATION */
+
+/* the styling below targets the "display" div which has a pull quote and various display styles */
+.display {
+  grid-template-columns: 50% 50%;
+  background-color: #f1f1f1;
+  display: grid;
+} 
+
+.display-left {
+  background-color: #fff;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  height: auto;
+  width: auto;
+}
+
+.display-right {
+  background-color: #;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  height: auto;
+  width: auto;
+  list-style: none;
+}
+
+li:nth-of-type(1)  { font-family: 'Poppins'; font-size: 1rem; font-weight: 200; }
+li:nth-of-type(2)  { font-family: 'Poppins'; font-size: 1.25rem; font-weight:350; }
+li:nth-of-type(3)  { font-family: 'Poppins'; font-size: 1.5rem; font-weight:500; }
+li:nth-of-type(4)  { font-family: 'Poppins'; font-size: 1.75rem; font-weight:650;}
+li:nth-of-type(5)  { font-family: 'Poppins'; font-size: 2rem; font-weight:800;}
+
+
+/* the following styles the glyph grid */
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  background-color: #000;
+}
+
+.cell {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 70px;
+  color: white;
+  line-height: 1;
+  font-family: 'Poppins';
+  font-weight: 200;
+  cursor: pointer;
+  transition: all .3s ease;
+  
+  &:hover {
+    position: relative;
+    z-index: 999;
+    color: #000;
+    background-color: #fff;
+    transform: scale(1.1);
+    font-weight: 800;
+  }
+}
+
+
+/* the following styles the "designer" div where you should add information about the designer or foundry */
+.designer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+} 
+
+
+/* the following styles the gallery at the bottom. replace the urls with links to your images. */
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30rem;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 1s ease;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+.item-1 { 
+  background-image: url('https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.item-2 { 
+  background-image: url('https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.item-3 { 
+  background-image: url('https://images.pexels.com/photos/688885/pexels-photo-688885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.item-4 { 
+  background-image: url('https://images.pexels.com/photos/1444321/pexels-photo-1444321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.item-5 { 
+  background-image: url('https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+/* Styles the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+  .parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  background-color: black;
+}
+  
+  .designer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+} 
+
+.display {
+  grid-template-columns: 100%;
+  background-color: #f1f1f1;
+  display: grid;
+} 
+  
+  .display-right {
+    padding-bottom: 15px;
+  }
+}
