@@ -48,15 +48,6 @@ body {
   font-size: 35px;
 }
 
-/* Style which has background color red and padding 200px */
-.top2 {
-  grid-area: top;
-  background-color: #ff0303;
-  padding: 200px;
-  text-align: center;
-  font-size: 35px;
-}
-
 /* Styles the topnav links */
 .topnav a {
   float: left;
