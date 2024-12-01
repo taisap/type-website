@@ -3,8 +3,21 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="c/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script>
+    const letterSpans = document.querySelectorAll('.glyphs_grid span');
+    const letterPreviewText = document.getElementById('letter_preview_text');
+    const letterPreviewLabel = document.getElementById('letter_preview_label');
+
+    letterSpans.forEach((span) => {
+      span.addEventListener('click', () => {
+        letterPreviewText.textContent = span.textContent;
+        letterPreviewLabel.textContent = `You selected: ${span.textContent}`;
+        alert(`You selected: ${span.textContent}`);
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -119,7 +132,14 @@
     </section>
   
     <section class="footer_block">
-      <div id="glyphs">
+      <div class="glyphs_grid">
+        <span class="glyphs_border">A</span><span class="glyphs_border">B</span><span class="glyphs_border">C</span><span class="glyphs_border">D</span><span class="glyphs_border">E</span><span class="glyphs_border">F</span><span class="glyphs_border">G</span><span class="glyphs_border">H</span><span class="glyphs_border">I</span><span class="glyphs_border">J</span>
+        <span class="glyphs_border">K</span><span class="glyphs_border">L</span><span class="glyphs_border">M</span><span class="glyphs_border">N</span><span class="glyphs_border">O</span><span class="glyphs_border">P</span><span class="glyphs_border">Q</span><span class="glyphs_border">R</span><span class="glyphs_border">S</span><span class="glyphs_border">T</span>
+        <span class="glyphs_border">U</span><span class="glyphs_border">V</span><span class="glyphs_border">W</span><span class="glyphs_border">X</span><span class="glyphs_border">Y</span><span class="glyphs_border">Z</span><span class="glyphs_border">a</span><span class="glyphs_border">b</span><span class="glyphs_border">c</span><span class="glyphs_border">d</span>
+        <span class="glyphs_border">e</span><span class="glyphs_border">f</span><span class="glyphs_border">g</span><span class="glyphs_border">h</span><span class="glyphs_border">i</span><span class="glyphs_border">j</span><span class="glyphs_border">k</span><span class="glyphs_border">l</span><span class="glyphs_border">m</span><span class="glyphs_border">n</span>
+        <span class="glyphs_border">o</span><span class="glyphs_border">p</span><span class="glyphs_border">q</span><span class="glyphs_border">r</span><span class="glyphs_border">s</span><span class="glyphs_border">t</span><span class="glyphs_border">u</span><span class="glyphs_border">v</span><span class="glyphs_border">w</span><span class="glyphs_border">x</span>
+        <span class="glyphs_border">y</span><span class="glyphs_border">z</span><span class="glyphs_border">.</span><span class="glyphs_border">,</span><span class="glyphs_border">;</span><span class="glyphs_border">:</span><span class="glyphs_border"><</span><span class="glyphs_border">></span><span class="glyphs_border">?</span><span class="glyphs_border">!</span>
+        <span class="glyphs_border">0</span><span class="glyphs_border">1</span><span class="glyphs_border">2</span><span class="glyphs_border">3</span><span class="glyphs_border">4</span><span class="glyphs_border">5</span><span class="glyphs_border">6</span><span class="glyphs_border">7</span><span class="glyphs_border">8</span><span class="glyphs_border">9</span>
       </div>
     </section>
   
