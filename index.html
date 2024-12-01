@@ -1,236 +1,128 @@
-<!---This tells the computer the language is English-->
-<html lang="en"> 
-
-<!---The "head"is where you should add any meta (non visible) information-->
+<html>
 <head>
-<link rel="stylesheet" href="c/style.css">  
-<!---Swap link below to your font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="c/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<!---The title shows up in the browser tab-->
-<title>Poppins</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<!---The body is where all your content goes-->  
 <body>
 
-<!---The div class identifies which div it is in CSS-->
-<div class="topnav">
-  <a href="Template-Home.html">Home</a>
-</div>
+  <!-- <header>
+  </header> -->
+  <div class="container">
+  
+    <section class="header_block">
+      <span id="header_block_style">
+        <h1>POPPINS</h1>
+        <h2>Designed by Johny Pinhorn & Ninad Kale</h2>
+      </span>
+    </section>
 
-<!---This div is a full-width column for your hero text-->
-<div class="top1"> 
-
-<!---This is a nested div that lives inside the div above. Update the links to your designer or foundry-->
-  <div class="header">
-    <h1>Poppins</h1>
-    <p>designed by Johny Pinhorn & Ninad Kale<br>
-      <a href="https://www.google.com/">Designer</a> or <a href="https://www.google.com/">Foundry Name</a></p>
-    
-<!---this /div closes the nested div with the text content-->
-  </div>
+    <section class="about_block">
+      <span id="about_block_style">
+        <h3>About the Typeface</h3>
+        <p>Poppins is a geometric sans-serif typeface designed by the Indian Type Foundry. It features clean,
+          minimalist letterforms with rounded shapes and a modern, versatile look, making it suitable for both digital
+          and print applications. Poppins comes in multiple weights, from thin to extra bold, allowing for a wide
+          range of typographic uses. It is especially popular in web design due to its legibility and aesthetic
+          compatibility with modern interfaces. The typeface supports many languages, including those that use the
+          Devanagari script, enhancing its global usability.</p>
+          <p>In addition to its geometric precision, Poppins stands out for its balanced proportions and monolinear
+          strokes, which contribute to its contemporary appeal. Its versatility makes it suitable for a wide range of
+          projects, from corporate branding to editorial layouts, and it pairs well with serif fonts for a clean and
+          modern contrast. Poppins also supports extensive character sets, including ligatures and diacritics, making
+          it an excellent choice for multilingual projects. Its open-source availability via Google Fonts has further
+          contributed to its widespread use across websites and digital platforms, offering designers a professional
+          yet accessible typographic option.
+        </p>
+      </span>
+    </section>
   
-<!---This /div closes the parent container. Anytime you have nested divs make sure you have a /div tag for all of them.-->
-</div>
-
-<!---This div is a 1-column container-->
-<div class="intro">
- <h2>About the Typeface</h2>
-  <p>Poppins is a geometric sans-serif typeface designed by the Indian Type Foundry. It features clean, minimalist letterforms with rounded shapes and a modern, versatile look, making it suitable for both digital and print applications. Poppins comes in multiple weights, from thin to extra bold, allowing for a wide range of typographic uses. It is especially popular in web design due to its legibility and aesthetic compatibility with modern interfaces. The typeface supports many languages, including those that use the Devanagari script, enhancing its global usability.
-   <br><br>
-   In addition to its geometric precision, Poppins stands out for its balanced proportions and monolinear strokes, which contribute to its contemporary appeal. Its versatility makes it suitable for a wide range of projects, from corporate branding to editorial layouts, and it pairs well with serif fonts for a clean and modern contrast. Poppins also supports extensive character sets, including ligatures and diacritics, making it an excellent choice for multilingual projects. Its open-source availability via Google Fonts has further contributed to its widespread use across websites and digital platforms, offering designers a professional yet accessible typographic option.
-   </p>
-</div>
+    <section class="regular_block">
+      <span id="common_page_style">
+        <div class="bar">
+          <span id="regular_bar_title"><h4>Poppins Regular</h4></span>
+        </div>
+        <div id="regular_example"><h1>Example 1, 2, 3, 4, 5 !?.</h4></div>
+          <div class="line"></div>
+        <span id="common_example">
+          <div class="font-text-block">
+            <p class="tont-10px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-20px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-30px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-40px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-50px">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div class="font-size-block">
+            <p class="font-10px">10pt</p>
+            <p class="font-20px">20pt</p>
+            <p class="font-30px">30pt</p>
+            <p class="font-40px">40pt</p>
+            <p class="font-50px">50pt</p>
+          </div>
+        </span>
+      </span>
+    </section>
   
-<div class="bar">
-   <span class="bar_content">
-     Lorem ipsum is derived from the Latin “dolorem ipsum” roughly translated as “pain itself.”
-   </span>
-</div>
+    <section class="medium_block">
+      <span id="common_page_style">
+        <div class="bar">
+          <span id="medium_bar_title"><h4>Poppins Medium</h4></span>
+        </div>
+        <div id="medium_example"><h1>Example 1, 2, 3, 4, 5 !?.</h4></div>
+        <div class="line"></div>
+        <span id="common_example">
+          <div class="font-text-block">
+            <p class="tont-10px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-20px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-30px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-40px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-50px">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div class="font-size-block">
+            <p class="font-10px">10pt</p>
+            <p class="font-20px">20pt</p>
+            <p class="font-30px">30pt</p>
+            <p class="font-40px">40pt</p>
+            <p class="font-50px">50pt</p>
+          </div>
+        </span>
+      </span>
+    </section>
   
-  <div class="display">
-    <div class="display-left" align="left">
-      <h1>"Poppins reflects the elegance of geometric forms while maintaining the clarity needed for modern typography"</h1>
-      <p>- Me</p>
-    </div>
-    
-      <div class="display-right" align="right">
-  <li>The quick brown fox jumps over the lazy dog.</li>
-  <li>The quick brown fox jumps over the lazy dog.</li>
-  <li>The quick brown fox jumps over the lazy dog.</li>
-  <li>The quick brown fox jumps over the lazy dog.</li>
-  <li>The quick brown fox jumps over the lazy dog.</li>
-</div>
-  </div>
+    <section class="bold_block">
+      <span id="common_page_style">
+        <div class="bar">
+          <span id="bold_bar_title"><h4>Poppins Black</h4></span>
+        </div>
+        <div id="bold_example"><h1>Example 1, 2, 3, 4, 5 !?.</h1></div>
+        <div class="line"></div>
+        <span id="common_example">
+          <div class="font-text-block">
+            <p class="tont-10px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-20px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-30px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-40px">The quick brown fox jumps over the lazy dog</p>
+            <p class="font-50px">The quick brown fox jumps over the lazy dog</p>
+          </div>
+          <div class="font-size-block">
+            <p class="font-10px">10pt</p>
+            <p class="font-20px">20pt</p>
+            <p class="font-30px">30pt</p>
+            <p class="font-40px">40pt</p>
+            <p class="font-50px">50pt</p>
+          </div>
+        </span>
+      </span>
+    </section>
   
-<div class="parent">
-  <div class="cell">
-    A
-  </div>
-  <div class="cell">
-    B
-  </div>
-  <div class="cell">
-    C
-  </div>
-  <div class="cell">
-    D
-  </div>
-  <div class="cell">
-    E
-  </div>
-  <div class="cell">
-    F
-  </div>
-  <div class="cell">
-    G
-  </div>
-  <div class="cell">
-    H
-  </div>
-  <div class="cell">
-    I
-  </div>
-  <div class="cell">
-    J
-  </div>
-  <div class="cell">
-    K
-  </div>
-  <div class="cell">
-    L
-  </div>
-  <div class="cell">
-    M
-  </div>
-  <div class="cell">
-    N
-  </div>
-  <div class="cell">
-    O
-  </div>
-  <div class="cell">
-    P
-  </div>
-  <div class="cell">
-    Q
-  </div>
-  <div class="cell">
-    R
-  </div>
-  <div class="cell">
-    S
-  </div>
-  <div class="cell">
-    T
-  </div>
-  <div class="cell">
-    U
-  </div>
-  <div class="cell">
-    V
-  </div>
-  <div class="cell">
-    W
-  </div>
-  <div class="cell">
-    X
-  </div>
-  <div class="cell">
-    Y
-  </div>
-  <div class="cell">
-    Z
-  </div>
-  <div class="cell">
-    0
-  </div>
-  <div class="cell">
-    1
-  </div>
-  <div class="cell">
-    2
-  </div>
-  <div class="cell">
-    3
-  </div>
-    <div class="cell">
-    4
-  </div>
-  <div class="cell">
-    5
-  </div>
-  <div class="cell">
-    6
-  </div>
-  <div class="cell">
-    7
-  </div>
-  <div class="cell">
-    8
-  </div>
-    <div class="cell">
-    9
-  </div>
-    <div class="cell">
-    ?
-  </div>
-  <div class="cell">
-    &
-  </div>
-  <div class="cell">
-    @
-  </div>
-  <div class="cell">
-    %
-  </div>
-  <div class="cell">
-    $
-  </div>
-  <div class="cell">
-    #
-  </div>
-  <div class="cell">
-    ;
-  </div>
-  <div class="cell">
-    {}
-  </div>
-  <div class="cell">
-    !
-  </div>
+    <section class="footer_block">
+      <div id="glyphs">
+      </div>
+    </section>
   
-</div>
-
-  
-  <div class="designer">
- <h2>About the Designer/Foundry</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam at lectus urna duis convallis convallis. Interdum posuere lorem ipsum dolor sit. Dignissim sodales ut eu sem integer vitae. Sodales ut eu sem integer vitae. Mauris cursus mattis molestie a. Turpis nunc eget lorem dolor sed viverra. A erat nam at lectus. Dignissim suspendisse in est ante in nibh mauris. Ac turpis egestas sed tempus urna. Vitae turpis massa sed elementum.
-   <br><br>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat nam at lectus urna duis convallis convallis. Interdum posuere lorem ipsum dolor sit. Dignissim sodales ut eu sem integer vitae. Sodales ut eu sem integer vitae. Mauris cursus mattis molestie a. Turpis nunc eget lorem dolor sed viverra. A erat nam at lectus. Dignissim suspendisse in est ante in nibh mauris. Ac turpis egestas sed tempus urna. Vitae turpis massa sed elementum.
-   </p>
-</div>
-  
-  <div class="gallery-wrap">
-    <div class="item item-1"></div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
-    <div class="item item-5"></div>
   </div>
- </div>
-
-<div class="grid-container">
-  <div class="footer">
-  <p>Footer</p>
-  <p>You could credit yourself here</p>
-  </div>
-</div>
-
 </body>
 </html>
