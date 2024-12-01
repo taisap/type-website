@@ -6,17 +6,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script>
-    const letterSpans = document.querySelectorAll('.glyphs_grid span');
-    const letterPreviewText = document.getElementById('letter_preview_text');
-    const letterPreviewLabel = document.getElementById('letter_preview_label');
-
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const letterSpans = document.querySelectorAll('span.glyphs_border');
+    console.log(`script loaded ${letterSpans.length}`);
     letterSpans.forEach((span) => {
       span.addEventListener('click', () => {
-        letterPreviewText.textContent = span.textContent;
-        letterPreviewLabel.textContent = `You selected: ${span.textContent}`;
         alert(`You selected: ${span.textContent}`);
+        console.log('Span clicked!');
       });
     });
+  });
   </script>
 </head>
 
