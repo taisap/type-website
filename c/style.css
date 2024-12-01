@@ -23,7 +23,7 @@ p,h1,h2,h3,h4,h5,h6 {
 html,body {
   width: 100%;
   height: 100%;
-  min-width: 1420px;
+  min-height: 600px;
   background-color: var(--background-color);
 }
 
@@ -97,15 +97,15 @@ section {
 /* header_block_style h1 */
 #header_block_style h1 {
   text-align: center;
-  font-size: 150px;
+  font-size: 11.25vw;
   font-weight: 600;
-  line-height: 150px;
+  line-height: 11.25vw;
 }
 
 /* header_block_style h2 */
 #header_block_style h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 2.25vw;
   font-style: italic;
   font-weight: 300;
   line-height: normal;
@@ -114,7 +114,7 @@ section {
 /* about_block_style h3 e*/
 #about_block_style h3 {
   text-align: left;
-  font-size: 30px;
+  font-size: 2.25vw;
   font-style: normal;
   font-weight: 500;
   line-height: 80px;
@@ -123,6 +123,7 @@ section {
 /* about_block_style p */
 #about_block_style p {
   padding-top: 15;
+  font-size: 1.5vw;
 }
 
 /*header paragraph style*/
@@ -131,7 +132,7 @@ section {
   padding-right: 50;
   padding-top: 15;
   text-align: left;
-  font-size: 22px;
+  font-size: 1.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -159,19 +160,19 @@ section {
 }
 
 #regular_bar_title h4 {
-  font-size: 30px;
+  font-size: 2.25vw;
   font-style: normal;
   font-weight: 400;
 }
 
 #medium_bar_title h4 {
-  font-size: 30px;
+  font-size: 2.25vw;
   font-style: normal;
   font-weight: 500;
 }
 
 #bold_bar_title h4 {
-  font-size: 30px;
+  font-size: 2.25vw;
   font-style: normal;
   font-weight: 700;
 }
@@ -179,7 +180,7 @@ section {
 #regular_example h1 {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 100px;
+  font-size: 7.5vw;
   font-style: normal;
   font-weight: 400;
 }
@@ -187,7 +188,7 @@ section {
 #medium_example h1 {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 100px;
+  font-size: 7.5vw;
   font-style: normal;
   font-weight: 500;
 }
@@ -195,21 +196,13 @@ section {
 #bold_example h1 {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 100px;
+  font-size: 7.5vw;
   font-style: normal;
   font-weight: 700;
 }
 
 .common_example {
   width: 100%;
-}
-
-#glyph_block {
-  width: 124px;
-  height: 124px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  border: 6px 
 }
 
 #glyphs {
@@ -220,34 +213,36 @@ section {
 
 .font-text-block {
   width: -fit-content;
+  height: -fit-content;
   float: left;
   text-align: left;
 }
 
 .font-size-block {
   width: -fit-content;
+  height: -fit-content;
   float: right;
   text-align: right;
 }
 
 .font-10px {
-  font-size: 10px;
+  font-size: 0.65vw;
 }
 
 .font-20px {
-  font-size: 20px;
+  font-size: 1.3vw;
 }
 
 .font-30px {
-  font-size: 30px;
+  font-size: 1.95vw;
 }
 
 .font-40px {
-  font-size: 40px;
+  font-size: 2.6vw;
 }
 
 .font-50px {
-  font-size: 50px;
+  font-size: 3.25vw;
 }
 
 .glyphs_grid {
@@ -263,12 +258,12 @@ section {
   width: 100%;
   position: relative;
   align-content: center;
-  border-radius: 20px;
-  border: 6px solid var(--text-color);
+  border-radius: 10px;
+  border: 3px solid var(--text-color);
   box-sizing: border-box;
-  height: 125px;
-  width: 125px;
-  font-size: 60px;
+  height: 62px;
+  width: 62px;
+  font-size: 2.25vw;
   color: var(--text-color);
   font-weight: 400;
 }
