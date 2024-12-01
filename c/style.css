@@ -267,3 +267,36 @@ section {
   color: var(--text-color);
   font-weight: 400;
 }
+
+.custom-alert {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  font-size: 2.25vw;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 3px solid var(--text-color);
+}
+
+.custom-alert-content {
+  position: relative;
+}
+
+.close-alert {
+  position: absolute;
+  align-content: center;
+  right: 10px;
+  cursor: pointer;
+  font-size: 2.25vw;
+  color: var(--text-color);
+}
+
+#alert-message {
+  margin: 0;
+}
